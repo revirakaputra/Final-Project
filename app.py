@@ -80,14 +80,14 @@ def run_ml_app():
     # Use responsive columns
     left, right = st.columns(2)
     GenHlth = left.number_input('General Health (Scale 1-5) (Good to Bad)', min_value=1, max_value=5)
-    BMI = right.number_input('Body Mass Index [BMI](https://www.cdc.gov/healthyweight/assessing/bmi/index.html)', min_value=15, max_value=45)
+    BMI = right.number_input('Body Mass Index [Check here](https://www.calculator.net/bmi-calculator.html)', min_value=15, max_value=45)
     Age = left.number_input('Age', min_value=18, max_value=200)
     HighBP = right.selectbox('High Blood Pressure', ('Yes', 'No'))
     HighChol = left.selectbox('High Cholesterol', ('Yes', 'No'))
     HeartDiseaseorAttack = right.selectbox('Heart Attack History', ('Yes', 'No'))
     DiffWalk = left.selectbox('Difficulty of walking', ('Yes', 'No'))
     Stroke = right.selectbox('Stroke History', ('Yes', 'No'))
-    PhysHlth = left.number_input('Physical Health (I have been feeling sick since __ days ago.(0 if no pain at all)).', min_value=0, max_value=30)
+    PhysHlth = left.number_input('Physical Health: I have been feeling sick since __ days ago.(0 if no pain at all).', min_value=0, max_value=30)
 
     button = st.button("Predict")
 
