@@ -80,7 +80,7 @@ def run_ml_app():
     # Use responsive columns
     left, right = st.columns(2)
     GenHlth = left.number_input('General Health (Scale 1-5) (Good to Bad)', min_value=1, max_value=5)
-    BMI = right.number_input('Body Mass Index [Check here](https://www.calculator.net/bmi-calculator.html)', min_value=15, max_value=45)
+    BMI = right.number_input('Body Mass Index [Check here](https://www.calculator.net/bmi-calculator.html?cage=25&csex=m&cheightfeet=5&cheightinch=10&cpound=160&cheightmeter=180&ckg=65&printit=0&ctype=metric)', min_value=15, max_value=45)
     Age = left.number_input('Age', min_value=18, max_value=200)
     HighBP = right.selectbox('High Blood Pressure', ('Yes', 'No'))
     HighChol = left.selectbox('High Cholesterol', ('Yes', 'No'))
