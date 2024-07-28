@@ -87,7 +87,7 @@ def run_ml_app():
     HeartDiseaseorAttack = right.selectbox('Heart Attack History', ('Yes', 'No'))
     DiffWalk = left.selectbox('Difficulty of walking', ('Yes', 'No'))
     Stroke = right.selectbox('Stroke History', ('Yes', 'No'))
-    PhysHlth = left.number_input('Physical Health', min_value=0, max_value=30)
+    PhysHlth = left.number_input('Physical Health (I have been feeling sick since __ days ago.(0 if no pain at all)).', min_value=0, max_value=30)
 
     button = st.button("Predict")
 
